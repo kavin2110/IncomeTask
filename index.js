@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Reset form after submission
                 addForm.reset();
-                alert('Data added successfully');
+                alert('Data added successfully.Please refresh the screen once');
             } catch (error) {
                 console.error('Failed to add todo', error);
             }
