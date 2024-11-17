@@ -61,7 +61,7 @@ function handleFormSubmit(event) {
     const index = lstodos.findIndex(todo => todo.id == id);
 
     if (index === -1) {
-        alert('Todo not found!');
+        alert('Data not found!');
         return;
     }
 
@@ -71,7 +71,7 @@ function handleFormSubmit(event) {
     
     localStorage.setItem('todos', JSON.stringify(lstodos));
 
-    alert('Todo updated successfully!');
+    alert('Data updated successfully!');
 
     // Redirect the user to the home page
     window.location.href = 'index.html';

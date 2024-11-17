@@ -9,7 +9,7 @@ function loadTodo(id) {
     const todo = lstodos.find(todo => todo.id == id);
 
     if (!todo) {
-        alert('Todo not found!');
+        alert('data not found!');
         window.location.href = 'index.html'; // Redirect to home if not found
         return;
     }
@@ -42,7 +42,7 @@ function loadTodo(id) {
    
     deleteButton.addEventListener('click', () => {
       
-        const isConfirmed = confirm('Are you sure you want to delete this todo?');
+        const isConfirmed = confirm('Are you sure you want to delete this data?');
         if (!isConfirmed) return;
 
         
@@ -50,7 +50,7 @@ function loadTodo(id) {
         localStorage.setItem('todos', JSON.stringify(updatedTodos));
 
         
-        alert('Todo deleted successfully!');
+        alert('Data deleted successfully!');
         window.location.href = 'index.html';
     });
 
